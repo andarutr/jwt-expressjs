@@ -4,6 +4,7 @@ const ProductController = require('../controllers/product');
 const UserController = require('../controllers/user');
 
 router.post('/register', UserController.create);
+router.post('/login', UserController.login);
 router.get('/products', ProductController.readAll);
 router.get('/products/:id', ProductController.readOne);
 router.post('/products', ProductController.create);
